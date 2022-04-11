@@ -11,6 +11,7 @@ export const validateKey = (req: Request, Response: Response, next: NextFunction
         }
        
       } catch (err) {
+        console.log('error');
         return Response.send({ error: 'APIKEY' });
       }
 }

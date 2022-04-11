@@ -10,6 +10,7 @@ const validateKey = (req, Response, next) => {
         }
     }
     catch (err) {
+        console.log('error');
         return Response.send({ error: 'APIKEY' });
     }
 };
