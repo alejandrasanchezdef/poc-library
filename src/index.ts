@@ -1,14 +1,16 @@
-export const validateKey = (req: any, Response:any, next: any)  => {
+import { NextFunction, Request, Response } from 'express';
+
+
+export const validateKey = (req: Request, Response: Response, next: NextFunction)  => {
     try {
         const apiKey = req.headers['X-API-Key'] || req.headers['x-api-key'];
         console.log(apiKey);
         
-        if(apiKey === '123'){
+        if(apiKey === 'g4bWl2eSKX3QQ4tgR0yZ31TzwpZcO796akpF0Zuy'){
             return next();
         }
        
       } catch (err) {
-        Response.status(400);
-        return Response.send({ error: Response.message });
+        return Response.send({ error: 'APIKEY' });
       }
 }
