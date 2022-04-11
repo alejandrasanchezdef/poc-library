@@ -8,6 +8,8 @@ export const validateKey = (req: Request, Response: Response, next: NextFunction
         
         if(apiKey === 'g4bWl2eSKX3QQ4tgR0yZ31TzwpZcO796akpF0Zuy'){
             return next();
+        }else{
+            console.log('error');
         }
        
       } catch (err) {
