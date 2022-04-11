@@ -1,0 +1,25 @@
+{
+  "name": "poc-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejandrasanchezdef/poc-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alejandrasanchezdef/poc-library/issues"
+  },
+  "author": "alejandra <alejandra.sanchez@definityfirst.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/alejandrasanchezdef/poc-library#readme",
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "typescript": "4.6.3"
+  }
+}
