@@ -8,6 +8,9 @@ const validateKey = (req, Response, next) => {
         if (apiKey === 'g4bWl2eSKX3QQ4tgR0yZ31TzwpZcO796akpF0Zuy') {
             return next();
         }
+        else {
+            console.log('error');
+        }
     }
     catch (err) {
         console.log('error');
