@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/alejandrasanchezdef/poc-library.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "bugs": {
     "url": "https://github.com/alejandrasanchezdef/poc-library/issues"
   },
